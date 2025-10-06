@@ -28,6 +28,13 @@ body {
     font-size: 24px;
 }
 
+/* common Tab・SP */
+@media (max-width: 1199px) {
+    .inner {
+        max-width: 97%;
+    }
+}
+
 
 /* ---------header------- */
 .header {
@@ -47,6 +54,37 @@ body {
 
 .fa-bolt-lightning {
     font-size: 40px;
+}
+
+/* widthが767以下になった時表示される */
+.header__nav-btn {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .header__btn {
+        display: none;
+    }
+
+    .header__nav-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 45px;
+        padding: 10px;
+        border: 1px solid #c0c0c0;
+        border-radius: 4px;
+        gap: 5px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .header__nav-btn span {
+        display: block;
+        background-color: #c0c0c0;
+        height: 2px;
+        width: 100%;
+    }
 }
 
 
@@ -73,6 +111,16 @@ body {
     margin-top: 20px;
 }
 
+/* main-visual SP */
+@media (max-width: 767px) {
+    .main-visual {
+        padding: 230px 0 130px;
+    }
+
+    .main-visual__title {
+        font-size: 80px;
+    }
+}
 
 /* --------about-------- */
 .about {
@@ -106,6 +154,25 @@ body {
     margin-top: 35px;
 }
 
+/* about Tab */
+@media (max-width: 1199px) {
+    .about {
+        padding: 50px 0 20px;
+    }
+
+    .about__contents {
+        display: block;
+    }
+
+    .about__image {
+        width: auto;
+    }
+
+    .about__textbox {
+        width: auto;
+        margin-top: 20px;
+    }
+}
 
 /* --------works-------- */
 .works {
@@ -158,6 +225,38 @@ body {
     padding: 12px 20px;
 }
 
+/* work Tab */
+@media (max-width: 1199px) {
+    .works__images {
+        display: block;
+    }
+
+    .works__image:nth-child(4n) {
+        margin-top: 80px;
+    }
+
+    .works__description {
+        margin: 80px auto 0;
+        display: block;
+    }
+
+    .works__text {
+        margin-right: 0;
+        margin: 0 auto;
+    }
+
+    .works__btn {
+        display: inline-block;
+        margin-top: 40px;
+    }
+}
+
+/* works SP */
+@media (max-width: 767px) {
+    .works__text {
+        width: auto;
+    }
+}
 
 /* --------skills-------- */
 .skills {
@@ -185,6 +284,20 @@ body {
     margin-top: 15px;
 }
 
+/* skills Tab */
+@media (max-width: 1199px) {
+    .skills-wrapper {
+        display: block;
+    }
+
+    .skills__items {
+        margin-top: 88px;
+    }
+
+    .skills__items:nth-child(1) {
+        margin-top: 50px;
+    }
+}
 
 /* --------sns-------- */
 .sns {
@@ -203,6 +316,22 @@ body {
     padding: 30px 0 30px;
     text-align: center;
     transition: .3s;
+}
+
+/* sns SP */
+@media (max-width: 767px) {
+    .sns {
+        padding: 50px 0;
+    }
+
+    .sns__icons {
+        display: block;
+    }
+
+    .sns__icon {
+        width: 100%;
+        height: auto;
+    }
 }
 
 .sns__icon:hover {
